@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+    # nginx:
+    #     image: nginx
+    #     container_name: dockernginx1
+    #     ports:
+    #       - "8080:80"
+    #     volumes:
+    #       - ./page:/usr/share/nginx/html
+    nodejs:
+        build:
+          dockerfile: Dockerfile
+        container_name: dockernode
+        ports:
+          - "8181:3000"
+      
